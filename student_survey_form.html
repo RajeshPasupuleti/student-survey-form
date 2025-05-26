@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Survey Form</title>
+        <style>
+          body{
+  background-image: url(https://c0.wallpaperflare.com/preview/802/871/785/ford-buildings-berry-college-education-north-carolina.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+  color: rgb(245, 255, 250);
+  font-size: 24px;
+  }
+  h1, p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  h1{
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+  p{
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  form{
+    background-color: rgba(10, 3, 17, 0.9);
+    border-radius: 5px;
+    width: 60vw;
+    max-width: 700px;
+    min-width: 350px;
+    margin: 0 auto;
+    padding: 15px 15px 25px 15px;
+  }
+  label{
+    display: block;
+    margin-top: 0.5em;
+  }
+  fieldset{
+    border: none;
+    margin-bottom: 1.5em;
+  }
+  input, select, textarea{
+    min-height: 2em;
+    width: 100%;
+    font-size: 1em;
+  }
+  input, select{
+    border-radius: 5px;
+  }
+  textarea{
+    min-height: 6.33em;
+  }
+  input[type="submit"]{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 1.33rem;
+    min-height: 2.5em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+  }
+  .inline {
+    display: inline-block;
+    width: unset;
+    margin-right: 0.5em;
+    vertical-align: middle;
+  }
+        </style>
+    </head>
+    <body>
+        <h1 id="title">Students Survey Form</h1>
+        <p id="description">Please fill the survey form.</p>
+        <form id="survey-form">
+            <fieldset>
+                <label for="name-label" id="name-label">Enter Your Name: <input type="text" id="name" placeholder="enter your name" required></label><br>
+                <label for="email-label" id="email-label">Enter Your Name: <input type="email" id="email" placeholder="enter your email" required></label><br>
+                <label for="number-label" id="number-label">Enter Your Age: <input type="number" id="number" placeholder="enter your Age" min=1 max=100 required></label><br>
+                <label for="dropdown">Select Your Branch:
+                    <select id="dropdown">
+                        <option value="" disabled selected>Select your branch</option>
+                        <option value="1">BE-CSE</option>
+                        <option value="2">BE-ECE</option>
+                        <option value="3">BE-MECHANICAL</option>
+                        <option value="4">BE-CIVIL</option>
+                        <option value="5">Other</option>
+                    </select>
+                </label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Which year do you study?</legend>
+                <label><input type="radio" name="year" value="first" required class="inline" /> First year</label>
+                <label><input type="radio" name="year" value="second" class="inline" /> Second year</label>
+                <label><input type="radio" name="year" value="third" class="inline" /> Third year</label>
+                <label><input type="radio" name="year" value="fourth" class="inline" /> Fourth year</label>
+            </fieldset> 
+            <fieldset>
+                <label>How would you rate this college
+                    <select id="dropdown2">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="e">Excellent</option>
+                        <option value="v">Very Good</option>
+                        <option value="g">Good</option>
+                        <option value="a">Average</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>What is your favourite thing in this college? </label>
+                <label><input type="checkbox" class="inline" value="sports"> Sports</label>
+                <label><input type="checkbox" class="inline" value="way-of-teaching"> Way of teaching</label>
+                <label><input type="checkbox" class="inline" value="extracurricular-activities"> Extracurricular Activities</label>
+                <label><input type="checkbox" class="inline" value="project"> Project Platform for Research & Development</label>
+                <label><input type="checkbox" class="inline" value="hostel-environment"> Hostel Environment</label>
+                <label><input type="checkbox" class="inline" value="campus-life"> Campus Life</label>
+                <label><input type="checkbox" class="inline" value="curriculam"> Curriculam</label>
+                <label><input type="checkbox" class="inline" value="faculty"> Interaction with faculty</label>
+                <label><input type="checkbox" class="inline" value="industry"> Industry Collabration</label>
+                <label><input type="checkbox" class="inline" value="other"> other</label>
+            </fieldset>
+            <fieldset>
+                <label> Any comments or suggestions?
+                  <textarea rows="5" cols="50" placeholder="Enter your comment here..."></textarea>
+                </label>
+            </fieldset>
+            <fieldset>
+                <input type="submit" value="submit" id="submit">
+            </fieldset>   
+        </form>
+    </body>
+</html>
